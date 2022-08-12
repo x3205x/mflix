@@ -16,6 +16,11 @@
     
 }
 
+.img-wrapper:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
 .text-wrapper {
     text-align: center;
 }
