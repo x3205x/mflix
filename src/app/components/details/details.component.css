@@ -1,0 +1,24 @@
+.show-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.plot {
+    padding: 10px;
+}
+
+img.poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%
+}
