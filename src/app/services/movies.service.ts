@@ -10,8 +10,10 @@ import { movie_mocks } from './movie_mocks';
 export class MoviesService {
 
   //movies = of(movie_mocks)
+  movies: any = []
+  //movies: Observable<any>
 
-  constructor() { }
+  constructor() {}
 
   getMovieById(id: String){
 
@@ -25,7 +27,10 @@ export class MoviesService {
     return movie
   }
 
-  getMovies() {
-    return movie_mocks
+  getAllMovies(): Observable<any> {
+    movie_mocks.map(show => {
+      this.movies.push(show)
+    })
+    return this.movies
   }
 }
