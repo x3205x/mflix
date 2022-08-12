@@ -3,7 +3,12 @@
     <div class="show-container" *ngFor="let movie of movies">
         <div class="img-wrapper" id="{{movie._id}}">
           <img class="poster" src="{{movie.poster}}">
+          <div class="text-wrapper">
           <div class="title">{{movie.title}}</div>
+            <span class="genres" *ngFor="let genre of movie.genres">
+             {{genre}}  
+            </span>
+          </div>
         </div>
     </div>
 </div>

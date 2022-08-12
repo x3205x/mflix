@@ -21,4 +21,6 @@ export class HomeComponent implements OnInit {
     this.movies = this.api.getAllMovies()
     console.log(this.movies)
   }
+
+  
 }

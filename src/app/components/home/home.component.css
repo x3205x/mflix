@@ -20,6 +20,15 @@
     
 }
 
+.text-wrapper {
+    text-align: center;
+}
+
+.genres {
+    color: red;
+    padding: 5px;
+}
+
 .poster{
     width: 250px;
     height: 300px;
