@@ -9,7 +9,7 @@ import { movie_mocks } from './movie_mocks';
 })
 export class MoviesService {
 
-  movies = of(movie_mocks)
+  //movies = of(movie_mocks)
 
   constructor() { }
 
@@ -26,6 +26,6 @@ export class MoviesService {
   }
 
   getMovies() {
-    return this.movies.subscribe()
+    return movie_mocks
   }
 }
