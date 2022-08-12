@@ -1,4 +1,10 @@
-<p>home works!</p>
-<div *ngFor="let movie of movies">
-    <img src="{{movie.poster}}">
+<div class="nav">home works!</div>
+<div class="home-container" >
+    <div class="show-container" *ngFor="let movie of movies">
+        <div class="img-wrapper" id="{{movie._id}}">
+          <img class="poster" src="{{movie.poster}}">
+          <div class="title">{{movie.title}}</div>
+        </div>
+    </div>
 </div>
+ 
