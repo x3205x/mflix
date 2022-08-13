@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,17 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   open: any = false
+  allGenres: any = []
 
-  constructor() {
-    
-   }
+  constructor(public api: MoviesService) {}
 
   ngOnInit(): void {
+    this.getGenres()
   }
 
   toggleNav(){
    this.open = !this.open
    console.log("clicked")
+  }
+
+  getGenres(){
+    this.allGenres = this.api.getAllGenres()
+    console.log(this.allGenres)
   }
 
 }

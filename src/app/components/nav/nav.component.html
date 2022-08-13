@@ -4,6 +4,9 @@
 
         <div class="overlay-content">
             <div routerLink="/home" (click)="toggleNav()">Home</div>
+            <div class="genres" *ngFor="let genre of allGenres">
+                <a class="link">{{genre}}</a>
+            </div>
         </div>
     </div>
 

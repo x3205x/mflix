@@ -9,9 +9,9 @@ import { movie_mocks } from './movie_mocks';
 })
 export class MoviesService {
 
-  //movies = of(movie_mocks)
+  allGenres: any = []
   movies: any = []
-  //movies: Observable<any>
+  movieGenres: any = []
 
   constructor() {}
 
@@ -32,5 +32,32 @@ export class MoviesService {
       this.movies.push(show)
     })
     return this.movies
+  }
+
+  getMoviesByGenre(genre: String): Observable<any> {
+
+    movie_mocks.map(show => {
+      show.genres.map(type => {
+        if(type === genre) {
+          this.movieGenres.push(show) 
+        }
+      })
+    })
+    return this.movieGenres
+  }
+
+  getAllGenres(): Observable<any> {
+
+    let genres: any = []
+    
+    movie_mocks.map(show => {
+      show.genres.map((type: any) => {
+         genres.push(type)
+      })
+    })
+    this.allGenres = genres.filter((item: String, pos: Number) => {
+      return genres.indexOf(item) == pos
+    })
+    return this.allGenres
   }
 }
