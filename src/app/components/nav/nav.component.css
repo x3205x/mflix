@@ -22,6 +22,11 @@
     margin: 10px;
 }
 
+.link:hover{
+    color: red;
+    cursor: pointer;
+}
+
 .logo{
     color: red;
     font-size: 70px;
