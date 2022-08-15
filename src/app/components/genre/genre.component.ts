@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class GenreComponent implements OnInit {
 
   movies: any = []
+  genre: any = ""
 
   constructor(
     public api: MoviesService,
@@ -17,8 +18,8 @@ export class GenreComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    let genre = this.route.snapshot.paramMap.get("genre")
-    this.getGenres(genre)
+    this.genre = this.route.snapshot.paramMap.get("genre")
+    this.getGenres(this.genre)
   }
 
   getGenres(genre: any){

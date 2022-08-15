@@ -5,7 +5,7 @@
         <div class="overlay-content">
             <div  class="link home" routerLink="/home" (click)="toggleNav()">Home</div>
             <div class="genres" *ngFor="let genre of allGenres">
-                <div class="link" routerLink="/genre/{{genre}}">{{genre}}</div>
+                <div class="link" routerLink="/genre/{{genre}}" (click)="toggleNav()">{{genre}}</div>
             </div>
         </div>
     </div>

@@ -36,6 +36,8 @@ export class MoviesService {
 
   getMoviesByGenre(genre: String): Observable<any> {
 
+    this.movieGenres = []
+
     movie_mocks.map(show => {
       show.genres.map(type => {
         if(type === genre) {
