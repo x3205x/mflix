@@ -11,7 +11,7 @@
     </div>
 
     <div>
-        <span class="openbtn" (click)="toggleNav()">&#9776;</span>
+        <span class="openbtn" *ngIf="!open" (click)="toggleNav()">&#9776;</span>
         <div class="logo">Mflix</div>
     </div>
 
