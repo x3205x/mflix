@@ -1,4 +1,3 @@
-import { getLocaleId } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MoviesService } from 'src/app/services/movies.service';
