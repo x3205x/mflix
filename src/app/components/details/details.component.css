@@ -12,6 +12,16 @@
     padding: 20px;
 }
 
+.cast, .director, .writer {
+    font-size: x-large;
+}
+
+.member {
+    font-size: large;
+    display: inline;
+    color: red;
+}
+
 .plot {
     padding: 10px;
 }
