@@ -3,7 +3,7 @@
         <a class="closebtn" (click)="toggleNav()">&times;</a>
 
         <div class="overlay-content">
-            <div  class="link" routerLink="/home" (click)="toggleNav()">Home</div>
+            <div  class="link home" routerLink="/home" (click)="toggleNav()">Home</div>
             <div class="genres" *ngFor="let genre of allGenres">
                 <a class="link">{{genre}}</a>
             </div>
