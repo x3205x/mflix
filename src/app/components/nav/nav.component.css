@@ -1,22 +1,57 @@
 .openbtn:hover, .closebtn:hover {
     cursor: pointer;
 }
+
+.closebtn {
+    font-size: 35px;
+    left: 45px;
+    top: 45px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.openbtn {
+    font-size: 35px;
+    left: 45px;
+    top: 45px;
+    position: absolute;
+}
+
 .nav-container{
     width: 100%;
     height: 100px;
     background-color: black;
     color: white;
+    display: inline;
+    margin: 10px;
+}
+
+.link {
+
+    font-size: x-large;
+}
+
+.link:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.home {
+    font-size: xx-large;
+    padding-bottom: 30px;
 }
 
 .logo{
     color: red;
-    font-size: xx-large;
+    font-size: 70px;
     font-weight: bolder;
     text-align: center;
 }
 
 #nav {
-    width: 20%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     height: 100%;
     background-color: white;
     position: fixed;
@@ -24,9 +59,11 @@
     color: black;
     transition: 0.8s;
     font-size: larger;
+    opacity: .8;
 }
 
 .overlay-content{
     font-weight: bold;
     text-align: center;
+    margin-top: 90px;
 }

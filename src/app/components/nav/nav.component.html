@@ -3,14 +3,18 @@
         <a class="closebtn" (click)="toggleNav()">&times;</a>
 
         <div class="overlay-content">
-            <div routerLink="/home" (click)="toggleNav()">Home</div>
+            <div  class="link home" routerLink="/home" (click)="toggleNav()">Home</div>
+            <div class="genres" *ngFor="let genre of allGenres">
+                <div class="link" routerLink="/genre/{{genre}}" (click)="toggleNav()">{{genre}}</div>
+            </div>
         </div>
     </div>
 
-    <div class="openbtn">
-        <span (click)="toggleNav()">&#9776;</span>
+    <div>
+        <span class="openbtn" *ngIf="!open" (click)="toggleNav()">&#9776;</span>
+        <div class="logo">Mflix</div>
     </div>
 
-    <div class="logo">Mflix</div>
+    
 </div>
 

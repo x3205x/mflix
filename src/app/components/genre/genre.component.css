@@ -1,4 +1,4 @@
-.home-container {
+.genre-container {
     width: 100%;
     height: 100%;
     background-color: black; 
@@ -7,11 +7,11 @@
     overflow-y: scroll;    
 }
 
-.home-container::-webkit-scrollbar-button{
+.genre-container::-webkit-scrollbar-button{
     color: white;
 }
 
-.home-container::-webkit-scrollbar{
+.genre-container::-webkit-scrollbar{
     display: none;
  }
 
@@ -21,6 +21,12 @@
     background-color: white;
     border-radius: 50%;
     margin-left: 90px;   
+}
+
+.genre {
+    color: white;
+    font-weight: bold;
+    font-size: xxx-large;
 }
 
 .show-container { 
